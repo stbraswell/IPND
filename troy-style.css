@@ -1,0 +1,93 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	background: url("sunsetHMB2.jpg") no-repeat fixed;
+    background-size: cover;
+    opacity: 0.8;
+    border-radius: 15px; 
+    color: white;
+    padding: 20px 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 1.6em;
+}
+
+p {
+    margin: 10px 0;
+}
+ol{
+	list-style-type: decimal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.5em; 
+    list-style-type: circle;
+}
+
+h1 {			/* Page Heading */
+    text-align: center;
+    color: #9bd7d5;
+}
+
+h2 {		/*Section Heading*/
+    background-color: #ff7260;
+    opacity: 0.8;
+    border-radius: inherit;
+    color: white;
+	text-align: center;
+    margin: 10px;
+	font-size: 50px
+}
+h3{			/*Subsection Heading*/
+    padding-left: 10px;
+    background-color: #129793;
+    opacity: 0.8;
+    border-radius: 5px; 
+    color: white;
+
+}
+h4{		/* TOC Heading */
+    text-align: center;
+    color: #598ed6; 
+    font-size: 1.6em;
+    padding: 10px;
+    margin: 10px;
+}
+.TOC {			/*This class sets the formatting for each section*/
+    background-color: #fff;
+    opacity: 0.6;
+    border-radius: inherit; /* Inherited from <body>*/
+    padding: 10px;
+    margin: 10px;
+}
+.lesson{		/*This class sets the formatting for each subsection*/
+    background-color: #fff;
+    opacity: 0.8;
+	border-radius: inherit; /* Inherited from <body>*/
+    padding: 10px;
+    margin: 10px;
+	color: black;
+}
+
+.codeex {
+    text-align: left;
+	padding-left: 20%;
+	
+}
+.col {
+    /*background-color: inherit;*/
+    float: left;
+    width: 33%;
+}
+

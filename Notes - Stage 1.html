@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Troy's Notes</title>
+  <link rel="stylesheet" href="troy-style.css">
+	
+</head>
+
+<body>
+
+	<div>
+	<h1><img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!">Introduction to Programming<img src="http://www.veryicon.com/icon/png/System/Farm%20Fresh/star.png" alt="Oops, does not compute!"></h1>
+	</div>
+	<div class="TOC">
+		<h4>Table of Contents</h4>
+		<ol>
+		    <li><a href="#stage-0">Stage 0: The basics of the Internet</a>
+		        <ul>
+		          <li><a href="#stage-0-1">The Internet</a></li>
+		          <li><a href="#stage-0-2">Tags</a></li>
+		          <li><a href="#stage-0-3">Whitespace in HTML</a></li>
+		          <li><a href="#stage-0-4">Inline and Block</a></li>
+		          <li><a href="#stage-0-5">Troy's Thoughts</a></li>
+		        </ul>
+		    </li>
+		    <li><a href="stage-1">Stage 1: Creating a Structured Document with HTML</a>	
+		        <ul>
+		          <li><a href="#stage-1-1">Languages of a Webpage</a></li>
+		          <li><a href="#stage-1-2">HTML's "tree-like" Structure</a></li>
+		          <li><a href="#stage-1-3">Speaking of Structure</a></li>
+		          <li><a href="#stage-1-4">Text Editors</a></li>
+		          <li><a href="#stage-1-5">CSS - Adding Style to the Structure</a></li>
+		          <li><a href="#stage-1-6">Troy's Thoughts</a></li>
+		        </ul>
+		    </li>
+		    <li><a href="stage-2">Stage 2: Python</a>	
+		        <ul>
+		          <li><a href="#stage-2-1">Programming</a></li>
+		          <li><a href="#stage-2-2">Python</a></li>
+		          <li><a href="#stage-2-3">Python Grammar</a></li>
+		          <li><a href="#stage-2-4">Python Expressions</a></li>
+		          <li><a href="#stage-2-5">Variables</a></li>
+		          <li><a href="#stage-2-6">Strings</a></li>
+		          <li><a href="#stage-2-7">Indexing Strings</a></li>
+		          <li><a href="#stage-2-8">Selecing Sub Sequences</a></li>
+		          <li><a href="#stage-2-9"><b>Find</b>ing Strings in Strings</a></li>
+		          <li><a href="#stage-2-10">Procedures/Functions: Input -> Function -> Output</a></li>
+		          <li><a href="#stage-2-11">Making Decisions</a></li>
+		          <li><a href="#stage-2-12">IF statements</a></li>
+		          <li><a href="#stage-2-13">More Loops: While</a></li>
+		        </ul>
+		    </li>
+			<li><a href="reflinks">Reference Links</a></li>
+		<!--<li><a href="refvideos">Reference Videos</a></li>-->
+	    </ol>
+	</div>
+	
+	<h2 id="stage-0">Stage 0: The basics of the Internet</h2>
+	<div class="lesson">
+		<div id="stage-0-1">
+			<h3>The Internet</h3>
+		</div>
+		<div>
+			<p> 
+				The Internet is a collection of computers that talk to each other. The web is a collection of
+		  		HTML docs.  When a user clicks on a link, that link is essentially an address to an HTML file on a server.
+		  		The browser translates that HTML file into a webpage that the user sees.  HTTP is the main protocol of the web.  HTML stands for Hypetext Markup Language.
+			</p>
+		</div>
+		<div id="stage-0-2">
+			<h3>Tags</h3>
+		</div>
+		<div>
+			<p>	
+				Tags are instructions to the computer and are not seen outside of the code <em> (e.g. on the webpage).</em> Elements are the complete tag, so from opening to closing.  These are also the "markup". Some tags need to be closed, if these types of tags are not closed, then the tag will apply to all text following the opening of the tag.Other tags do not need to be closed, these are called "Void Tags".  Tags can also have attributes.  These attributes give more dimension to a tag, such as linking a webpage to text.
+			</p>
+		</div>
+		<div id="stage-0-3">
+			<h3>Whitespace in HTML</h3>
+		</div>
+		<div>
+			<p>
+				Whitespace in HTML doesn't translate 1:1 on the webpage.  Spaces seem to be 1:1, but multiple spaces or carrige returns do not.  For example,
+		  		this is what 10 spaces looks like "          ". 
+			</p>
+		</div>
+		<div id="stage-0-4">
+			<h3>Inline and Block</h3>
+		</div>
+		<div>
+			<p>
+				There are inline and block elements.  Block elements seem to protect their contents by fencing them, like the paragraph element.
+				Block elements are displayed with a line break while inline elements are not. All elements are rendered as boxes, and only some block elements can be container elements for other block elements. For instance, a &lt;div&gt; can have a &lt;p&gt;, an &lt;ol&gt;, a &lt;ul&gt;, another &lt;div&gt;, but an &lt;ol&gt; or &lt;ul&gt; cannot have a &lt;p&gt; or a &lt;br&gt;.
+			</p>
+		</div>
+		<div id="stage-0-5">
+			<h3>Troy's Thoughts</h3>
+		</div>
+		<div>
+			<ul>
+				<li>	Hey look, I'm already writing in HTML!<br></li>
+	  			<li>	Computers take code literally and want it to be in an exact format.  One sintax mistake and it's not going to do what you thought you told it to do.<br></li>
+	  			<li>	You can't know everything about coding or a particular language; that's why we have <a href="www.google.com"> this </a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<h2 id="stage-1">Stage 1: Creating a Structured Document with HTML</h2>
+	<div class="lesson">
+		<div id="stage-1-1">
+			<h3>Languages of a Webpage</h3>
+		</div>
+		<div>
+				Web pages can can be made up of HTML, CSS and Javascript, which are each a language.  A good way to think of these is to think of a house:<br>
+				<ul>
+					<li>HTML is like the walls of a house.  it is essentially the "structure" or building material.</li>
+					<li>CSS is like the decor - what the house looks like.  Think paint on the walls, art, colors used, size and proportion of the furniture.</li>
+					<li>Javascript is like the interactive elements of the house. Think - light switches, doors..</li>
+				</ul>
+		</div>
+		<div id="stage-1-2">
+			<h3>HTML's "tree-like" Structure</h3>
+		</div>
+		<div>
+			<p>
+				This is exactly what it sounds like.  You can essentially draw out a web page as a tree; meaning a "div" can branch into a "header" and a "paragraph".  Each of those branches can branch even further depending on what is nested inside of them.  Elements define what the branches are and these are nested in other elements.
+			</p>
+		</div>
+		<div id="stage-1-3">
+			<h3>Speaking of Structure</h3>
+		</div>
+		<div>
+			<p>
+				If you look at the HTML code of a web page the structure looks like a wave or zigzags.  This kind of structure helps when reading the code to see where sections start and end.  While some editors seem to gently create this structure while you are writing the code, it is not a given.
+			</p>
+		</div>
+		<div id="stage-1-4">
+			<h3>Text Editors</h3>
+		</div>
+		<div>	
+				<ol type= "I">
+					<li>Scratchpad.io <a href="scratchpad.io">LINK</a>
+						<ul>
+							<li>Good for Beginners</li>
+							<li>Feedback is immediate</li>
+							<li>No sharing</li>
+							<li>Supports HTML and CSS</li>
+						</ul>
+					</li>
+					<li>Codepen <a href="codepen.io">LINK</a>
+						<ul>
+							<li>Intermediate level editor</li>
+							<li>Feedback takes 2-3 seconds</li>
+							<li>Sharing is easy but you need an account</li>
+							<li>Suports HTML,CSS and Javascript</li>
+						</ul>
+					</li>
+					<li>Sublime
+						<ul>
+							<li>Requires some experience and getting use to
+							<li>To see code updates you have to save the file and refresh the page
+							<li>Sharing is possible but more difficult than Codepen
+							<li>Supports alot of languages
+						</ul>
+					</li>
+				</ol>
+		</div>
+		<div id="stage-1-5">
+			<h3>CSS - Adding Style to the Structure</h3>
+		</div>
+		<div>
+			<p>
+				CSS allows you to give your webpage style.  This is a separate file that the browser will read and link to the HTML file.
+				Throughout the code you have many different "blocks", you can assign these blocks classes and use the CSS file to give that class a unique style.  This is helpful because this allows you to set a style easily for different blocks, without having to repeat the style setup each time.
+			</p>
+			<p>
+				There is definately a <em><b>LOT</b></em> more to learn about CSS.  It is clear from the last segment that CSS is a powerful tool and will take time to learn (most likely from playing and failing) <img src="http://i.imgur.com/uZfdhRl.gif" width="30" height="30" alt="Oops, does not compute!">
+			</p>
+			<div>
+				Things to note about CSS
+				<ul>
+					<li>CSS = Cascading Stylesheets</li>
+					<li>You can also define your styles in the html file itself by adding &lt;style&gt;&lt;/style&gt; in the head section.</li>
+					<li>If the section in CSS starts with a "." then it is defining a Class.</li>
+					<li>If the selector is a tag without the brackets (i.e. "em" instead of &lt;em&gt;), then it is defining the style of that tag.
+					<li>Things that can be inherited: color, font, letter spacing, line height, list style, text alignment, text indentation, text transform, visibility, white space and word spacing (probably others?)</li>
+					<li>Things that are not inherited: background, border, display, float and clear, height and width, margin, min/max height & width, outline, overflow, padding, position, text decoration, vertical alignment and z index (probably others?)</li>
+					<li>"The Box Model" - Margin -> Border -> Padding -> Content</li>
+				</ul>
+			</div>
+				
+				<p>Older browsers don't always like CSS, so add this to the beginning of the CSS file:<br>
+				</p>
+				
+				<div class="codeex">
+					* { <br>
+	   					-webkit-box-sizing: border-box;<br>
+	   					-moz-box-sizing: border-box;<br>
+	   					-ms-box-sizing: border-box;<br>
+	    				box-sizing: border-box;<br>
+					}<br>
+				</div>
+			</div>
+		<div id="stage-1-6">
+			<h3>Troy's Thoughts</h3>
+		</div>
+		<div>
+			<ul>
+				<li>Big Picture - Visualize the "boxes" in the webpage
+				<li>CSS - LOTS TO LEARN
+				<li><span style="color:orange">This is how to span a color</span><span style="color:blue"> or two</span>
+			</ul>
+		</div>
+	</div>
+	<h2 id="stage-2">Stage 2: Python</h2>
+	<div class="lesson">
+		<div id="stage-2-1">
+			<h3>Programming</h3>
+		</div>
+		<div>
+			Programs tell computers what to do.  These programs are written in programming languages (like Python), which are special languages that are clear and precise.  "Natural" languages (like English) would not be great programming languages due to their ambiguity and verbosity. 
+		</div>
+		<div id="stage-2-2">
+			<h3> Python</h3>
+		</div>
+		<div>
+			Python is a programming language which is run in an <em>interpreter</em>.  The <em>interpreter</em> runs the program, interprets them, then executes the program that was written in python by running the program in a language that the computer can understand.
+		</div>
+		<div id="stage-2-3">
+			<h3> Python Grammar</h3>
+			<div>
+				Grammar is very important since computers are stupid!  While humans can interpret things like "me hungry", computers can't.  So the language that is input as a command must follow specific rules, else what you expected to happen.....won't!
+			</div>
+		</div>
+		<div id="stage-2-4">
+			<h3>Python Expressions</h3>
+			<div>
+				Python uses "expressions" as statements.  <br>
+				<ul>
+					<li>use "#" to make a comment in python</li>
+					<li>"print 1" will give "1"</li>
+					<li>"print 2 * 10" will give "20"</li>
+					<li>in python 5 / 2 = 2, but 5.0 / 2 = 2.5 or 5 / 2.0 = 2.5</li>
+				</ul>
+				Keep in mind that things like "print 2 *" will throw an error!
+			</div>
+		</div>	
+		<div id="stage-2-5">
+			<h3>Variables</h3>
+			<div>
+				<ul>
+					<li>To "assign a variable" is to give a variable a value</li>
+					<li>Variables are assigned this way: "variable = expression"</li>
+					<li>EX: "Troy = 33", where "Troy" is the variable</li>
+				</ul>
+			</div>
+		</div>	
+		<div id="stage-2-6">
+			<h3>Strings</h3>
+			<div>
+				<ul>
+					<li>Strings are a sequence of characters</li>
+					<li>EX: "Hello"</li>
+					<li>You can concatenate strings and Variables: if T = "Troy", Print 'Hello' + T = Hello Troy</li>
+					<li>Print '!' * 3 = !!!</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-7">
+			<h3>Indexing Strings</h3>
+			<div>
+				<ul>
+					<li>When indexing strings, you count from left to right, starting with 0</li>
+					<li>SO: 'udacity'[0] --> 'u' | 'udacity'[1+1] --> 'a'</li>
+					<li>you can also use a variable that is a string: so if, name = 'Troy', name[1] -->'r'</li>
+					<li>if your index is greater than the number of letters in your string, you get an error: 'troy'[4] -->error</li>
+					<li>you can use negative numbers too, this will start counting from the end, so if, name = 'troy', name[-2] -->'o'</li>
+				</ul>
+			</div>		
+		</div>
+		<div id="stage-2-8">
+			<h3>Selecing Sub Sequences</h3>
+			<div>
+				<ul>
+					<li>&lt;string&gt;[&lt;expression 1&gt;:&lt;expression 2&gt;], where &lt;expression 1&gt; is the start and &lt;expression 2&gt; is the end</li>
+					<li>EX:word = 'assume'</li>
+					<li>word[4:6] --> me</li>
+					<li>word[3:] --> ume</li>
+					<li>word[:2] --> as </li>
+					<li>word[:] --> assume </li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-9">
+			<h3><b>Find</b>ing Strings in Strings</h3>
+			<div>
+				<ul>
+					<li>&lt;string1&gt;.find(&lt;string2&gt;), where you are searching &lt;string1&gt; for &lt;string2&gt;</li>
+					<li>Find (aka method) is a built in procedure prvided by python, that operates on stings</li>
+					<li>if the target string is not found you get -1</li>
+					<li>"Test".find("te")--> -1 , due to capitalization</li>
+					<li>"Test".find("Te")--> 0 , because "Te" starts at position 0</li>
+					<li>you can also use variables instead of typing out &lt;string1&gt; or &lt;string2&gt;</li>
+					<li>every string begins with an "empty string" | empty string = ''</li>
+					<li>&lt;string1&gt;.find(&lt;string2&gt;,&lt;number&gt;), this tells find @ what position to start searching, which is useful for finding &lt;string2&gt; after the first time (or second...) it appears in &lt;string1&gt;</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="stage-2-10">
+			<h3>Procedures/Functions: Input -> Function -> Output</h3>
+			<div>
+				<ul>
+					<li>Procedures are a predefined list of steps that take an input, manipulate the input at each step and then produce an output</li>
+					<li>Procedures must be defined using "def"</li>
+					<li>Procedures expect to recieve the same number of inputs they are defined for</li>
+					<li>Procedures need to have the return statement in order to produce an output</li>
+				</ul>	
+			</div>
+			<div class="codeex">
+				<span style="color:green">Example #1</span> - Simple procedure to show structure and basic function<br>
+	   				def add_two_numbers(number_1,Number_2):<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; return number_1 + number_2<br>
+	   				<br>
+	    			print add_two_numbers (4,3) => 7<br>
+	   				print add_two_numbers ('hi','troy') => hitroy<br>
+	   				<br>
+			</div>
+
+			<div class="codeex">
+				<span style="color:green">Example #2</span> - Using Prcedures as inputs<br>
+	   				def square(n):<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return n * n<br>
+	   				<br>
+	    			x = 2<br>
+	   				print square(2) => 4<br>
+	   				print square(square(x)) => 16<br>
+			</div>
+		</div>	
+		<div id="stage-2-11">
+			<h3>Making Decisions</h3>
+			<div>
+			
+					Comparitors:<br>
+				
+						<ul>
+							<li>&lt;	-> less than</li>
+							<li>&gt; 	-> greater than</li>
+							<li>&lt;= 	-> less than or equal to</li>
+							<li>&gt;= 	-> greater than or equal to</li>
+							<li>!= 		-> not equal to</li>
+							<li>== 		-> equal to (NOTE: one equal sign is for assignment of varialbes, two equal signs checks for equality</li>
+							<li>or 		-> or operator.... it means or :)</li>
+							<li>and 	-> and operator.... it means and ;)</li>
+						</ul>
+					
+					Boolean Values are True or False<br>
+				
+						<ul>
+							<li> 2 &lt; 3 => True</li>
+							<li> 21 &lt; 3 => False</li>
+							<li>7 * 3 != 21 => False</li>
+						</ul>		
+			</div>
+		</div>	
+		<div id="stage-2-12">
+			<h3>IF statements</h3>
+			<div>
+				<ul>
+					<li>IF statements will be executed once if the test expression is true</li>
+					<li><span style="color:green">Structure: </span>Notice that there is <u>no "end if"</u>, INDENTATION IS KEY!</li>
+				</ul>	
+				<div class="codeex">
+	   				if &lt;Test Expression&gt;:<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
+	   				<br>
+	    			&lt;After if Code&gt;
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 1: </span>Defines a procedure that returns the ABS value of a number by using an if statement. </li>
+				</ul>
+				<div class="codeex">
+					def absolute(x):<br>
+	   				&nbsp;&nbsp;if x &lt; 0:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp; x = -x<br>
+	   				&nbsp;&nbsp;return x<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 2: </span>Defines a procedure that returns the bigger of x and y. </li>
+				</ul>
+				<div class="codeex">
+					def bigger(x,y):<br>
+	   				&nbsp;&nbsp;if x &gt; y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;if x == y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;else:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return y<br>
+	   				<br>
+				</div>	
+				<ul>
+					<li><span style="color:green">OR: </span>If the first expression evaluates to TRUE, the value is True and the 2nd expression is not evaluated</li>
+				</ul>
+				<div class="codeex">
+					def bigger(x,y):<br>
+	   				&nbsp;&nbsp;if x &gt; y or if x == y:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return x<br>
+	   				&nbsp;&nbsp;else:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;return y<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 3: </span>Defines a procedure that returns the bigger of a,b and c.</li>
+				</ul>
+				<div class="codeex">
+					def biggest (a,b,c):<br>
+					&nbsp;&nbsp;if a &gt; b:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if a &gt; c:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if b &gt; c:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return b<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c<br>
+				</div>		
+				<ul>
+					<li><span style="color:green">Example 4: </span>Defines a procedure that returns the bigger of a,b and c, but uses the "bigger" procedure.</li>
+				</ul>
+				<div class="codeex">
+					def biggest (a,b,c):<br>
+					&nbsp;&nbsp;return bigger(bigger(a,b),c)<br>
+				</div>			
+			</div>
+		</div>	
+		<div id="stage-2-13">
+			<h3>More Loops: While</h3>
+			<div>
+				<ul>
+					<li>While loops will be executed as long as the test expression is true</li>
+					<li><span style="color:green">Structure: </span></li>
+				</ul>	
+				<div class="codeex">
+	   				While &lt;Test Expression&gt;:<br>
+	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
+	   				<br>
+	    			&lt;After While Code&gt;
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 1: </span>Prints #'s 0 - n</li>
+				</ul>	
+				<div class="codeex">
+					def print_numbers(n):<br>
+					&nbsp;&nbsp;i = 0<br>
+	   				&nbsp;&nbsp;While i &lt; n:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+	   				&nbsp;&nbsp;return<br>
+	   				<br>
+				</div>
+				<ul>
+					<li><span style="color:green">Example 2: </span>Prints #'s 1 - n, notice the difference in EX. above</li>
+				</ul>	
+				<div class="codeex">
+					def print_numbers(n):<br>
+					&nbsp;&nbsp;i = 0<br>
+	   				&nbsp;&nbsp;While i &lt; n:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+	   				&nbsp;&nbsp;return<br>
+	   				<br>
+				</div>	
+				<ul>
+					<li>'break' gives us a way to stop the loop even while the test condition is true</li>
+				</ul>
+				<div class="codeex">
+	   				Whlie&lt;TestExpression&gt;:<br>
+	   				&nbsp;&nbsp;if &lt;BreakTest&gt;:<br>
+	   				&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+	   				&nbsp;&nbsp;&lt;more code&gt;<br>
+	   				&lt;After Whlie Code&gt;<br>
+	   				<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2 id="reflinks">Reference Links</h2>
+	<div class="lesson">
+		<div class="col lesson">
+			<ul>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/html/Reference" target="_blank">HTML Reference</a>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a>
+				<li><a href="http://www.color-hex.com/" target="_blank">Color Codes</a>
+				<li><a href="http://validator.w3.org/#validate_by_input" target="_blank">HTML Validation</a>
+				<li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">CSS Validation</a>
+			</ul>
+		</div>	
+		<div class="col lesson">
+			<ul>
+				<li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/index.html" target="_blank">Udacity Sample Pages and Assets</a>
+				<li><a href="http://www.sitepoint.com/web-foundations/vendor-specific-properties/" target="blank">Vendor-specific Properties</a>
+				<li><a href="http://learn-2-code.appspot.com/additional_resources/#topic-1" target="_blank">Andy's Additional Resources</a>
+			</ul>
+		</div>
+		<br style="clear:both;"/>
+	</div>
+<!--<h2 id="refvideos">Reference Videos</h2>
+	<div class="lesson">
+		<div class="col lesson">
+			<ul>
+				<li><a href="XXXXXXXX" target="_blank">YYYYYYYYYY</a>
+			</ul>
+		</div>	
+		<br style="clear:both;"/>
+	</div> -->
+</body>
+
+</html>
