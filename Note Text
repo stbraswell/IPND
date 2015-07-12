@@ -1,11 +1,11 @@
-STAGE: stage-2-14
+STAGE: STAGE-2-14
 TITLE: Structured Data: Lists
 DESCRIPTION: A list is a sequence of Anything - characters, strings, numbers...even other lists!
 NOTE: Lists take the form: <list> = [<expression>,<expression>,...]
 NOTE: Empty list => []
 NOTE: Elements of a list start from 0 so: [0,1,2,3...]
-NOTE: When defining a list, especially a long list, you can split the <expression>'s up *****example*****
-NOTE: You can even index within an indexed list. i.e. list1 = [['Troy','is'],['cool','!']- print list1[1][1] => will print the 4th element of the list, in this case '!'
+NOTE: When defining a list, especially a long list, you can split the <expression>'s up
+NOTE: You can even index within an indexed list. i.e. list1 = [['Troy','is'],['cool','!']- print list1[1][1] => will print the 2nd element of the 2nd list in the list, in this case '!'
 EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dZ2dwemtaYjBfTzA
 STAGE: stage-2-15
 TITLE: List Mutations and Aliasing
@@ -18,7 +18,7 @@ NOTE: The "append" operation lets you insert another element into an existing li
 NOTE: The "plus" operation is like concatination for lists: [1,2] + [3,4] => [1,2,3,4]
 Note: The "len" operation outputs the number of elements in a list (this also works on strings): len([0,1]) => 2
 EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dNm56SDFETVhERjA
-STAGE: STAGE-2-17
+STAGE: stage-2-17
 TITLE: Sructured Data: For Loops
 DESCRIPTION: For loops used on lists are similar to using While loops, however they make it easier because it essentially has a built in counter: the length of the list!
 NOTE: for <name> in <list>:
@@ -31,3 +31,13 @@ NOTE: "in" is used to determine wether or not a value is in a list.  it takes th
 NOTE: if &lt;value&gt; is in the &lt;list&gt;, output is True otherwise, output is false
 NOTE: &lt;value&gt; not in &lt;list&gt; -> is the opposite of "in".
 EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dSUhTVlEwbTVZakE
+STAGE: stage-2-18
+TITLE: Problem Solving
+DESCRIPTION: Problem solving isn't just about understanding the problem, it's also about understanding how to solve it.  Breaking the porblem up into multiple part and tackling the smaller parts one at a time makes it eaiser. Understanding the inputs and outputs is a must, but understanding the relationship between them is KEY!
+NOTE: Rule 0: Don't Panic
+NOTE: Rule 1: What are the inputs (and how are they represented)?
+NOTE: Rule 2: What are the outputs?
+NOTE: Rule 3: Solve the Problem!
+NOTE: Simple Mechanical Solution
+NOTE: 
+EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dfmRvcjhSYlAyeEhQbEZ1Wm9xYzE3M3pyeVJrQUtIS3RRemZMYzFoMXM1a3c
