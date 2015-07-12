@@ -112,10 +112,24 @@ DESCRIPTION: List operations allow you to perform certain tasks on lists
 NOTE: The "append" operation lets you insert another element into an existing list: <list>.append(<element>)
 NOTE: The "plus" operation is like concatination for lists: [1,2] + [3,4] => [1,2,3,4]
 Note: The "len" operation outputs the number of elements in a list (this also works on strings): len([0,1]) => 2
+STAGE: STAGE-2-17
+TITLE: Sructured Data: For Loops
+DESCRIPTION: For loops used on lists are similar to using While loops, however they make it easier because it essentially has a built in counter: the length of the list!
+NOTE: for <name> in <list>:
+NOTE: <name> is essentially the variable name
+NOTE: For loop on list example:
+NOTE: "Index" is used to find an element within a list.  It takes the form: &lt;list&gt;.index(&lt;value&gt;)
+NOTE: Index always gives the 1st found position
+NOTE: Index will return an error if the value is not found
+NOTE: "in" is used to determine wether or not a value is in a list.  it takes the form: &lt;value&gt; in &lt;list&gt;
+NOTE: if &lt;value&gt; is in the &lt;list&gt;, output is True otherwise, output is false
+NOTE: &lt;value&gt; not in &lt;list&gt; -> is the opposite of "in".
 """
 
 
 def generate_all_html(text):
+    text = text.replace('<','&lt;')
+    text = text.replace('>','&gt;')
     current_concept_number = 1
     concept = get_concept_by_number(text, current_concept_number)
     all_html = ''
