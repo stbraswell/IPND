@@ -29,5 +29,5 @@ NOTE: Index always gives the 1st found position
 NOTE: Index will return an error if the value is not found
 NOTE: "in" is used to determine wether or not a value is in a list.  it takes the form: &lt;value&gt; in &lt;list&gt;
 NOTE: if &lt;value&gt; is in the &lt;list&gt;, output is True otherwise, output is false
-NOTE: &lt;value&gt; not in &lt;list&gt; -> is the opposite of "in".2
+NOTE: &lt;value&gt; not in &lt;list&gt; -> is the opposite of "in".
 EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dSUhTVlEwbTVZakE
