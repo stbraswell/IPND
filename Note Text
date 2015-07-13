@@ -34,10 +34,10 @@ EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dSUhTVlEwbTVZakE
 STAGE: stage-2-18
 TITLE: Problem Solving
 DESCRIPTION: Problem solving isn't just about understanding the problem, it's also about understanding how to solve it.  Breaking the porblem up into multiple part and tackling the smaller parts one at a time makes it eaiser. Understanding the inputs and outputs is a must, but understanding the relationship between them is KEY!
-NOTE: Rule 0: Don't Panic
-NOTE: Rule 1: What are the inputs (and how are they represented)?
-NOTE: Rule 2: What are the outputs?
-NOTE: Rule 3: Solve the Problem!
-NOTE: Simple Mechanical Solution
-NOTE: 
+NOTE: Step 0: Don't Panic
+NOTE: Step 1: What are the inputs (and how are they represented)?
+NOTE: Step 2: What are the outputs?
+NOTE: Step 3: Solve the Problem!
+NOTE: Step 4: Simple Mechanical Solution
+NOTE: Step 5: Develop incrementally and test as you go
 EXAMPLE:https://drive.google.com/open?id=0B2DsntQwDC9dfmRvcjhSYlAyeEhQbEZ1Wm9xYzE3M3pyeVJrQUtIS3RRemZMYzFoMXM1a3c
