@@ -62,20 +62,20 @@ def get_description(concept):
             description = concept[start_location+13 :end_location-1]
     return description
 
-# takes in the text of the current concept and creates "list1" which contains the positions of the text 'NOTE: '
+# takes in the text of the current concept and creates "list_of_positions" which contains the positions of the text 'NOTE: '
 def list_positions_in_string(text):
     i=0
     counter = 0
-    list1 = []
+    list_of_positions = []
     number = ''
     while number != -1:
         number = text.find('NOTE: ',i)
-        list1.append(number)
+        list_of_positions.append(number)
         i = number + 1
         counter += 1
-    return list1
+    return list_of_positions
 
-#takes in the text of the current concept and output of list_positions_in_string, outputs the text string of each NOTE as a list          
+#takes in the text of the current concept and the output of list_positions_in_string, outputs the text string of each NOTE as an element of a list          
 def stringlist(text,strings):
     i = 0
     textlist=[]
