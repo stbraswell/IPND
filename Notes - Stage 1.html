@@ -319,10 +319,17 @@
 			<h3>Procedures/Functions: Input -> Function -> Output</h3>
 			<div>
 				<ul>
-					<li>Procedures are a predefined list of steps that take an input, manipulate the input at each step and then produce an output</li>
-					<li>Procedures must be defined using "def"</li>
-					<li>Procedures expect to recieve the same number of inputs they are defined for</li>
-					<li>Procedures need to have the return statement in order to produce an output</li>
+					<li>Procedures or functions are a predefined list of steps that take an input, manipulate the input at each step and then produce an output</li>
+					<li>The <b>benefits</b> of using procedures/functions are:</li>
+						<ul>
+							<li>Reduction of code duplication</li>
+							<li>Decomposing complex problems into simpler pieces</li>
+							<li>Improving code clarity</li>
+							<li>Reuse code</li>
+						</ul>
+					<li>Procedures/functions must be defined using "def"</li>
+					<li>Procedures/functions expect to recieve the same number of inputs they are defined for</li>
+					<li>Procedures/functions need to have the return statement in order to produce an output</li>
 				</ul>	
 			</div>
 			<div class="codeex">
@@ -452,7 +459,7 @@
 					<li><span style="color:green">Structure: </span></li>
 				</ul>	
 				<div class="codeex">
-	   				While &lt;Test Expression&gt;:<br>
+	   				while &lt;Test Expression&gt;:<br>
 	   			&nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;<br>
 	   				<br>
 	    			&lt;After While Code&gt;
@@ -464,7 +471,7 @@
 				<div class="codeex">
 					def print_numbers(n):<br>
 					&nbsp;&nbsp;i = 0<br>
-	   				&nbsp;&nbsp;While i &lt; n:<br>
+	   				&nbsp;&nbsp;while i &lt; n:<br>
 	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
 	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
 	   				&nbsp;&nbsp;return<br>
@@ -476,7 +483,7 @@
 				<div class="codeex">
 					def print_numbers(n):<br>
 					&nbsp;&nbsp;i = 0<br>
-	   				&nbsp;&nbsp;While i &lt; n:<br>
+	   				&nbsp;&nbsp;while i &lt; n:<br>
 	   				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
 	   				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
 	   				&nbsp;&nbsp;return<br>
@@ -486,7 +493,7 @@
 					<li>'break' gives us a way to stop the loop even while the test condition is true</li>
 				</ul>
 				<div class="codeex">
-	   				Whlie&lt;TestExpression&gt;:<br>
+	   				whlie&lt;TestExpression&gt;:<br>
 	   				&nbsp;&nbsp;if &lt;BreakTest&gt;:<br>
 	   				&nbsp;&nbsp;&nbsp;&nbsp;break<br>
 	   				&nbsp;&nbsp;&lt;more code&gt;<br>
